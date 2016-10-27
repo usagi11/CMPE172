@@ -101,7 +101,7 @@ function checkOrder(cmd){
 	    if(!isNaN(rate)){
 		var total = rate * amount;
 		total = total.toFixed(4);
-		
+		total = parseInt(total);
 		//push the order to the orderList
 		currency = currency.toUpperCase();
 		orderList.push({timestamp: date, type: action, amount: amount, currency: currency, total: total});
@@ -110,6 +110,7 @@ function checkOrder(cmd){
 		    out(`Order to ${action} ${amount} ${currency} worth of BTC queued @${total} BTC/${currency} (${rate} BTC)`);
 		    }
 		if(action === 'SELL'){
+		    total = -total;
 		    out(`Order to ${action} ${amount} ${currency} worth of BTC queued @${total} ${currency}/BTC (${rate} BTC)`);
 		    }
 		}
@@ -127,11 +128,9 @@ function checkOrder(cmd){
 //display orders
 function orders(){
     out("==== CURRENT ORDERS ===");
-    var totalAmount = [];
-    totatlAmount = _.pluck(orderList, 'total');
-    var finalAmount = totatlAmount.reduce(sum);
-    out(finalAmount);
-    out(`CURRENT  : ${finalAmount}`);
+    var totalAmount = _.pluck(orderList, 'total');
+    var sum = totalAmount.reduce(calSum);
+    out(`CURRENT  : ${sum}`);
     
 
     //display each order with date
@@ -156,7 +155,7 @@ function orders(){
 
 }
 // function of sum
-var sum = function (x,y){
+function calSum(x,y){
     return x + y;
 }
 
