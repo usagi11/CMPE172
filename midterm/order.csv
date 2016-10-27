@@ -1,0 +1,5 @@
+timestamp,buyOrsell,amount,currency,conversion rate to BTC
+Thu Oct 27 2016 06:53:53 GMT+0000 (UTC),BUY,100,BTC,
+Thu Oct 27 2016 06:53:53 GMT+0000 (UTC),BUY,10,USD,
+Thu Oct 27 2016 06:53:53 GMT+0000 (UTC),BUY,10,JPY,
+Thu Oct 27 2016 06:53:53 GMT+0000 (UTC),SELL,10,USD,
