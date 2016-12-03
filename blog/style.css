@@ -1,0 +1,51 @@
+
+h1{
+  margin:0;
+  background-image:url("lapu.jpg");
+  background-size:cover;
+  background-position:top;
+  padding: 250px 0;
+  margin: 30px;
+  font-size:200px;
+  position:center;
+  left:50px;
+  color:white;
+  text-align: center;
+}
+
+header{ 
+  padding:10px 10px;
+  font-size: 20px;
+  background-image:url("lapu.jpg");
+  text-align: right;
+}
+
+.blogArea{
+  background-image:url("blog.jpeg");
+  background-size: cover;
+  background-repeat:no-repeat;
+  text-align: center;
+}
+#blogTitle{
+  font-size:35px;
+  color:yellow;
+  text-align: center;
+
+
+}
+#textBox{
+  height:20px;
+  width:380px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+textarea{
+  font-size:18px;
+  background-color: #99cc00;
+}
+#writeBlog{
+  background-color:green;
+  border-radius:12px;
+  border:2px solid white;
+  text-align: center;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<title>Simple blog</title><meta charset="utf-8"/>
+</head>
+<header>
+<div class="login">
+	<a href="#myPopup1" data-rel="popup" id="logIn" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check">Log in</a>
+		<div data-role="popup" id="myPopup1" class="ui-content" data-dismissible="false" style="min-width:250px;" >
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+			<label>User Name:</label>
+			<input type="email" placeholder="Email">
+			<label>Password:</label>
+			<input type="password" placeholder="Password">
+			<label id="rm"><input type="checkbox">Remember me</label>
+			<button onclick = "location.href = 'blog.html'" id="log-in" type="submit">Log in</button>
+		</div>
+</div>
+<div class="signup">
+	<a href="#myPopup2" data-rel="popup" id="signUp" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check">Sign Up</a>
+		<div data-role="popup" id="myPopup2" class="ui-content" data-dismissible="false" style="min-width:500px;" >
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+			<form method="post" action="demoform.asp" class="signUp">
+				<div>
+					<h3>Infromation</h3>
+					 <label for="firstName">First Name:</label>
+					 <input type="text" id="firstName" placeholder="First name" autofocus required>
+					 <label for="lastName">Last Name:</label>
+					 <input tyep="text" for="lastName" id="lastName" placeholder="Last name" required >
+					 <label for="email">Email:</label>
+					 <input type="text" for="email" placeholder="Email" required >
+					 <label for="userName">User Name:</label>
+					 <input type="text" for="userName" placeholder="User Name" required >
+					 <label for="passWord1">Password:</label>
+					 <input type="text" for="passWord1" placeholder="Enter password" required >
+					 <label for="passWord2">Re-enter password:</label>
+					 <input type="text" for="passWord2" placeholder="Re-enter password again" required >
+					 <input type="submit" value="Submit" onclick = "location.href='blog.html'">
+				</div>
+			</form>
+		</div>
+</div>
+<input id="writeBlog" type="submit" value="Write a blog" onclick="location.href='blog.html'">
+</header>
+<body>
+<div>
+
+<h1>B L O G</h1>
+			
+</body>
+</html>
