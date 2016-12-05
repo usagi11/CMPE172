@@ -1,0 +1,60 @@
+header{
+	background-color: lightgreen
+}
+
+#titleWord{
+	text-align: center;
+	background-color: lightgreen;
+	font-family: fantasy;
+	padding-top:5px;
+	font-size:50px;
+}
+#icons{
+	padding: 5px;
+	text-align: right;
+}
+.mainPG{
+	background-image: url("dailylife.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+
+}
+
+.signup, .blogHP, .loginpage{
+	background-color: lightgreen;
+	background-image: url("dailylife.jpeg");
+	background-size:cover;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	text-align:center;
+	font-family: fantasy;
+	font-size:20px;
+	padding: 100px 250px;
+	border-radius: 4px;
+}
+
+.loginpage, .signUp, .blogHP{
+	text-align: center;
+}
+#txa{
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size:20px;
+	background-color:YellowGreen;
+}
+.blog{
+	font-size: 30px;
+}
+
+.loginpage input[type=text], .loginpage input[type=password], .blog input[type=text], .signup input[type=text], .signup input[type=password],select{
+	width:100%;
+	padding:10px 20px;
+	margin:8px 0;
+	border:1px solid;
+	border-radius:4px;
+	box-sizing: border-box;
+	font-size:20px;
+	font-family: fantasy;
+}
