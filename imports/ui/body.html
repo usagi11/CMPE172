@@ -1,0 +1,27 @@
+<body>
+  <div calss = "container">
+  <header>
+  <h1 id = "titleB">Private Simple blog</h1><br>
+  
+  
+    {{> loginButtons}}
+
+    {{#if currentUser}}
+    <h1 id="countBlog">Amount of dialy ({{incompleteCount}})</h1>
+    
+    <form class="new-item">
+    <input id = "textB" style="font-size: 15px;" type = "text" name = "text" placeholder="Enter your words"/>
+    <button id = "sbutton" style="background:transparent; border:0;" ><img src="img/enter.gif" width="90" height="50" alt="submit"/></button>
+  </form>
+  {{else}}
+  <p>Please log in or sign up.</p>
+  {{/if}}
+  </header>
+
+  <ul>
+    {{#each items}}
+    {{> item}}
+      {{/each}}
+  </ul>
+  </div>
+</body>

@@ -1,0 +1,154 @@
+body{
+	font-family: fantasy;
+	background-color: #315481;
+	background-image: linear-gardient(to bottom, #315481, #918e82 100%);
+	background-attachment: fixed;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	color:purple;
+	padding:0;
+	margin:0;;
+	font-size:30px;
+	background-image: url("img/dailylife.jpeg");
+	background-repeat: cover;
+}
+#countBlog{
+	font-size:20px;
+	color:white;
+	text-align: left;
+}
+.container{
+	max-width:600px;
+	margin:0 auto;
+	min-height:100%;
+	background:white;
+	
+}
+#textB{
+	font-size:15px;
+	font-family:fantasy;
+	background-color: #d2edf4;
+
+}
+#titleB{
+	font-size:100px;
+	text-align:center;
+}
+header{
+	background:#d2edf4;
+	background-image: linear-gradient(to bottom, #d0edf5, ##ele5f0 100%);
+	padding: 20px 15px 15px 15px;
+	position:relative;
+	background-color:pink;
+}
+
+#login-buttons{
+	display:block;
+}
+
+h1{
+	font-size:1.5em;
+	margin:0;
+	margin-bottom:10px;
+	display: inline-block;
+	margin-right:1em;
+}
+
+form{
+	margin-top:10px;
+	margin-bottom:-10px;
+	position:relative;
+}
+.new-item input{
+	box-sizing:border-box;
+	padding: 10px 0;
+	background: transparent;
+	border:none;
+	width:100%;
+	padding-right:80px;
+	font-size:1em;
+}
+.new-item input:focus{
+	outline:0;
+}
+#sbutton{
+	width:10%;
+	font-family: fantasy;
+	background-color: transparent;
+
+
+}
+ul{
+	margin:0;
+	padding:0;
+	background:white;
+}
+
+.delete {
+  float: right;
+  font-weight: bold;
+  background: none;
+  font-size: 1em;
+  border: none;
+  position: relative;
+}
+ 
+.text{
+	font-size:20px;
+}
+
+li {
+  position: relative;
+  list-style: none;
+  padding: 15px;
+  border-bottom: #eee solid 1px;
+}
+ 
+li .text {
+  margin-left: 10px;
+  font-size:15px;
+}
+ 
+li.checked {
+  color: #888;
+}
+ 
+li.checked .text {
+  text-decoration: line-through;
+}
+ 
+li.private {
+  background: #eee;
+  border-color: #ddd;
+}
+ 
+header .hide-completed {
+  float: right;
+}
+ 
+.toggle-private {
+  margin-left: 5px;
+}
+ 
+@media (max-width: 600px) {
+  li {
+    padding: 12px 15px;
+  }
+ 
+  .search {
+    width: 150px;
+    clear: both;
+  }
+ 
+  .new-task input {
+    padding-bottom: 5px;
+  }
+}  
+
+
+
+
+
